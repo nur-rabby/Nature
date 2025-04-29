@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/fbZ71Q7S/profile.jpg" alt="Logo" class="logo">
+    <div id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
+  </header>
+
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="overlay" onclick="toggleMenu()"></div>
+
+  <section class="hero-section" id="home">
+    <video id="bgVideo" autoplay muted loop playsinline class="bg-video">
+      <source src="BackgroundVid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Unmute Button -->
+    <button id="unmuteBtn">Unmute</button>
+
+    <div class="text-container">
+      
+      <p class="text-item">Avoid plastic.😒</p>
+      <p class="text-item">Save water and energy.💧🔋</p>
+      <p class="text-item">Plant trees and flowers.🌳🎴</p>
+      <p class="text-item">Support eco-friendly products.♻️</p>
+      <p class="text-item">Don’t use harmful chemicals.🧪</p>
+      <p class="text-item">Explore the Beauty of Nature🌎🏞🏕.</p>
+      <p class="text-item">Breathe in the Fresh Air.</p>
+      <p class="text-item">Find Peace in the Wilderness.</p>
+      <p class="text-item">Keep our Earth green and clean.</p>
+      <p class="text-item">Reduce, Reuse, Recycle.</p>
+      <p class="text-item">Created By Nurrabby.</p>
+    </div>
+  </section>
+
+  <section class="content-section fade" id="about">
+    <h2>About Nature</h2>
+    <p>Nature is the heartbeat of our planet—calm, powerful, and endlessly beautiful. It offers us clean air, peaceful moments, and a sense of belonging far beyond city walls. To truly experience nature is to remember what it means to be alive, connected, and part of something greater.</p>
+  </section>
+
+  <section class="content-section fade" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Photo1.jpg" alt="Nature 1">
+      <img src="Photo2.jpg" alt="Nature 2">
+      <img src="Photo3.jpg" alt="Nature 3">
+      <img src="Photo4.jpg" alt="Nature 2">
+      <img src="Photo5.jpg" alt="Nature 3">
+      <img src="Photo6.jpg" alt="Nature 2">
+    </div>
+  </section>
+
+  <section class="content-section fade" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: nurrabby01.bd@gmail.com</p>
+    <p>Twitter: @0xnurrabby</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
